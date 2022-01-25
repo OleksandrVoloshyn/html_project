@@ -1,0 +1,136 @@
+* {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+:root {
+    --black-color: #0B2330;
+    --orange-color: #F9C600;
+    --green-color: #51CEBC;
+    --violet-color: #BD78F0;
+    --bisque-color: #F2EDE7;
+    --txt-color: #375361;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.m_side_36 {
+    margin: 0 36px;
+}
+
+.btn {
+    height: 54px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px 29px;
+    border: 1px solid;
+    line-height: 24px;
+}
+
+.orange_btn {
+    background-color: var(--orange-color);
+    color: var(--black-color);
+    border-color: var(--orange-color);
+}
+
+/*----------------------HEADER-------------------------------*/
+.top_bar {
+    height: 83px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_menu {
+    align-items: center;
+    column-gap: 177px;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.nav_menu__left {
+    column-gap: 56px;
+}
+
+.nav_menu__right {
+    align-items: center;
+    column-gap: 24px;
+}
+
+.nav_menu__right > button {
+    background-color: var(--black-color);
+    color: #fff;
+}
+
+.header_content {
+    justify-content: space-between;
+}
+
+.header_content__left {
+    margin: 154px 200px 0 147px;
+}
+
+.header_title {
+    font-size: 60px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    font-weight: normal;
+    color: var(--black-color);
+}
+
+.header_txt {
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--txt-color);
+    margin: 32px 0 38px;
+}
+
+.header_content__left button:nth-child(2) {
+    margin-left: 16px;
+    background-color: transparent;
+}
+
+
+.header_content__right {
+    position: relative;
+}
+
+.header_content__right img.img_goal {
+    position: absolute;
+    top: 172px;
+    right: 110px;
+}
+
+/*----------------------COMPANIES-------------------------------*/
+
+.companies{
+    margin: 190px 0;
+    justify-content: center;
+}
+.companies_txt{
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 59px;
+}
+.companies_wrap{
+    margin: 0 174px;
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-gap: 16px 82px;
+}
+.companies_wrap > div{
+    width: 152px;
+    height: 56px;
+}
+
+.
