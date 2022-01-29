@@ -5,69 +5,343 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logo_icon.svg" type="image/x-icon">
     <title>Sprig</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/445b9ef1b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
-        <div class="top_bar flex">
-            <div class="header_logo m_side_36"><img src="images/header_logo.svg" alt="logo"></div>
-            <div class="nav_menu flex m_side_36">
-                <div class="nav_menu__left flex">
-                    <div><a href="#">Why Sprig?</a></div>
-                    <div><a href="#">Product</a></div>
-                    <div><a href="#">Customers</a></div>
-                    <div><a href="#">Resources</a></div>
-                    <div><a href="#">Plans</a></div>
-                </div>
-                <div class="nav_menu__right flex">
-                    <div><a href="#">Sign In</a></div>
-                    <div><a href="#">Talk to Sales</a></div>
-                    <button class="btn">Start for Free</button>
-                </div>
-            </div>
+
+    <header>
+        <div class="top_bar m_side_32 d-flex align-items-center justify-content-between">
+            <div class="header_logo"><img src="images/header_logo.svg" alt="Logo"></div>
+            <nav class="header__nav_menu d-flex align-items-center">
+                <ul class="header__nav_menu__left d-flex mt-0 mb-0 list-unstyled">
+                    <li><a href="#" class="text-decoration-none color_black">Why Sprig?</a></li>
+                    <li><a href="#" class="text-decoration-none color_black">Product</a>
+                        <i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#" class="text-decoration-none color_black">Customers</a>
+                        <i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#" class="text-decoration-none color_black">Resources</a>
+                        <i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#" class="text-decoration-none color_black">Plans</a></li>
+                </ul>
+                <ul class="header__nav_menu__right d-flex mt-0 mb-0 list-unstyled">
+                    <li><a href="#" class="text-decoration-none color_black">Sign In</a></li>
+                    <li><a href="#" class="text-decoration-none color_black">Talk to Sales</a></li>
+                </ul>
+                <button class="btn_custom">Start for Free</button>
+            </nav>
         </div>
 
-        <div class="header_content flex">
+        <div class="header_content d-flex justify-content-between">
             <div class="header_content__left">
-                <div class="header_title">In-context user research that's fast and reliable.</div>
-                <div class="header_txt">Ensure user research happens early and often with Sprig's targeted microsurveys,
-                    video questions, and more.
+                <div class="header_title color_black">In-context user <br>research that's<br>fast and<br>reliable.</div>
+                <div class="header_txt color_silver">
+                    Ensure user research happens early and <br> often with Sprig's targeted
+                    microsurveys,<br> video questions, and more.
                 </div>
-                <div>
-                    <button class="btn orange_btn">Start for Free</button>
-                    <button class="btn">Talk to Sales</button>
-                </div>
+                <button class="btn_custom orange_btn">Start for Free</button>
+                <button class="btn_custom">Talk to Sales</button>
             </div>
-            <div class="header_content__right">
+            <div class="header_content__right position-relative">
                 <img src="images/orange_block.svg" alt="orange_block">
-                <img src="images/orange_block_girl.svg" alt="goal" class="img_goal">
+                <img src="images/header_girl.png" alt="Primary Goal" class="img_goal position-absolute">
             </div>
         </div>
     </header>
-    <div class="companies">
-        <div class="companies_txt">Trusted by the world's most <br> innovative companies</div>
-        <div class="companies_wrap">
-            <div><img src="images/square.svg" alt="Square"></div>
-            <div><img src="images/codeAcademy.svg" alt="Code Academy"></div>
-            <div><img src="images/dropBox.svg" alt="Drop Box"></div>
-            <div><img src="images/loom.svg" alt="Loom"></div>
-            <div><img src="images/adobe.svg" alt="Adobe"></div>
-            <div><img src="images/shift.svg" alt="Shift"></div>
-            <div><img src="images/ease.svg" alt="ease"></div>
-            <div><img src="images/ironClad.svg" alt="Iron Clad"></div>
-            <div><img src="images/openDoor.svg" alt="Open Door"></div>
-            <div><img src="images/surfLine.svg" alt="Surf line"></div>
-            <div><img src="images/appAnnie.svg" alt="App Annie"></div>
-            <div><img src="images/beyondPricing.svg" alt="Beyond Pricing"></div>
-            <div><img src="images/proGuides.svg" alt="Pro Guides"></div>
-            <div><img src="images/invoice2go.svg" alt="Invoice2go"></div>
-            <div><img src="images/chipper.svg" alt="Chiper"></div>
+
+    <main>
+        <section class="partners" style="margin: 190px 0">
+            <h3 class="partners_tittle text-center txt_fs42_lh48 color_black">
+                Trusted by the world's most <br> innovative companies</h3>
+            <div class="partners_wrap d-grid">
+                <div><img src="images/square.svg" alt="Square"></div>
+                <div><img src="images/codeAcademy.svg" alt="Code Academy"></div>
+                <div><img src="images/dropBox.svg" alt="Drop Box"></div>
+                <div><img src="images/loom.svg" alt="Loom"></div>
+                <div><img src="images/adobe.svg" alt="Adobe"></div>
+                <div><img src="images/shift.svg" alt="Shift"></div>
+                <div><img src="images/ease.svg" alt="ease"></div>
+                <div><img src="images/ironClad.svg" alt="Iron Clad"></div>
+                <div><img src="images/openDoor.svg" alt="Open Door"></div>
+                <div><img src="images/surfLine.svg" alt="Surf line"></div>
+                <div><img src="images/appAnnie.svg" alt="App Annie"></div>
+                <div><img src="images/beyondPricing.svg" alt="Beyond Pricing"></div>
+                <div><img src="images/proGuides.svg" alt="Pro Guides"></div>
+                <div><img src="images/invoice2go.svg" alt="Invoice2go"></div>
+                <div><img src="images/chipper.svg" alt="Chiper"></div>
+            </div>
+        </section>
+
+        <section class="modern_product d-flex m_side_32">
+            <div class="d-flex align-items-center"><img src="images/bicyclist.svg" alt="Bicyclist"></div>
+            <div class="modern_product_txt">
+                <div class="modern_product_txt__tittle txt_fs34_lh40 color_black">
+                    Modern product teams move fast,<br> but learning from customers takes <br>
+                    a ton of time, effort, and energy.
+                </div>
+                <div class="modern_product_txt__info color_black">
+                    So teams often rush user research or skip it altogether,<br>
+                    causing products and features to miss the mark.
+                </div>
+            </div>
+        </section>
+
+        <section class="analytics d-flex flex-column align-items-center">
+            <div class="analytics_title text-center txt_fs34_lh40">
+                Sprig makes it possible to obtain qualitative <br> insights at the speed and scale of analytics
+            </div>
+            <div><img src="images/analytic.svg" alt="Analytics"></div>
+            <button class="btn_custom orange_btn">Start for Free</button>
+        </section>
+
+        <section class="actual_users d-flex justify-content-end m_side_32 position-relative">
+            <div class="violet_block">
+                <div><img src="images/actual_user.svg" alt="Actual User" class="position-absolute"></div>
+                <div class="actual_users_txt">
+                    <div class="actual_users_title txt_fs42_lh48 color_black">
+                        Target your actual users <br> during key moments <br>throughout their product <br> journey.
+                    </div>
+                    <div class="txt_fs17_lh40 color_black">
+                        Get 30% higher response rates by asking your customers hyper-relevant <br>
+                        questions based on who they are and what they'll do within your product.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions" style="margin: 136px 32px 148px 148px;">
+            <h2 class="solutions_tittle txt_fs14_lh24_clr">SOLUTIONS</h2>
+            <div class="solutions_txt txt_fs42_lh48 color_black">
+                How Sprig helps ensure every <br> product decision is customer-<br>informed
+            </div>
+            <div class="solutions_sub color_silver">And helps through every stage of your product.</div>
+            <div class="solutions_content">
+                <div class="solutions_content__top d-flex justify-content-between">
+
+                    <div class="ss_content__top__info">
+                        <div><img src="images/cont_micro_ico.svg" alt="message ico" class="ss_icon_margins7"></div>
+                        <h3 class="txt_fs34_lh40 color_black mb-0">Contextual Microsurveys</h3>
+                        <div class="txt_fs17_lh28 color_silver">
+                            Keep a constant pulse on your customer’s experience.<br>Continuously surface user insights
+                            via in-product, email, or link <br> microsurveys to improve your product and acquisition
+                            funnels.
+                        </div>
+                        <button class="btn_custom">Learn More</button>
+                    </div>
+                    <div><img src="images/cont_micro.svg" alt="Main Reason"></div>
+                </div>
+
+                <div class="solutions_content__mid d-flex justify-content-between">
+                    <div class="ss_content__mid__info">
+                        <div><img src="images/video_ques_ico.svg" alt="Video ici" class="ss_icon_margins7"></div>
+                        <h3 class="txt_fs34_lh40 color_black mb-0">Video Questions</h3>
+                        <div class="txt_fs17_lh28 color_silver ss_sub_marg36">
+                            Have more customer conversations, in less time. Conduct
+                            one<br>-to-one user interviews anytime, anywhere in order to validate<br> ideas and build a
+                            roadmap your customers will love.
+                        </div>
+                        <button class="btn_custom">Learn More</button>
+                    </div>
+                    <div><img src="images/video_ques.svg" alt="Explain Process"></div>
+                </div>
+
+                <div class="solutions_content__bot d-flex justify-content-between">
+                    <div class="ss_content__bot__info">
+                        <div><img src="images/conc_test_ico.svg" alt="Concept Testing ico" class="ss_icon_margins7">
+                        </div>
+                        <h3 class="txt_fs34_lh40 mb-0">Concept Testing</h3>
+                        <div class="txt_fs17_lh28 ss_sub_marg36">
+                            Quickly iterate designs based on feedback from your
+                            users.<br> Conduct rapid and remote concept testing to ensure your new <br> concept, design,
+                            and messaging hit the mark by collecting<br>feedback from your customers before launch.
+                        </div>
+                        <button class="btn_custom">Learn More</button>
+                        <nav class="solutions_nav d-flex">
+                            <div><a href="#" class="ss_nav_cm text-decoration-none">CONTEXTUAL MICROSURVEYS</a></div>
+                            <div><a href="#" class="ss_nav_vq text-decoration-none">VIDEO QUESTIONS</a></div>
+                            <div><a href="#" class="ss_nav_ct text-decoration-none">CONCEPT TESTING</a></div>
+                        </nav>
+                    </div>
+                    <div><img src="images/conc_test.svg" alt="Concept Testing"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="features_title txt_fs14_lh24_clr">FEATURES</h2>
+            <div class="features_txt color_black">How Sprig delivers accurate, in-depth <br> user insights in real-time
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div><img src="images/target.svg" alt="Target " class="target_img"></div>
+
+                <!--                    todo add js accordion-->
+                <div class="features_accordion">
+                    <div class="accordion_item">
+                        <div class="accordion_head d-flex justify-content-between">
+                            <h4 class="accordion_title color_black">Contextual Targeting</h4>
+                            <i class="fas fa-chevron-up d-flex align-items-center"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="txt_fs17_lh28 color_silver m-0">
+                                Target users based on what they do in your product
+                            </div>
+                            <div class="txt_fs17_lh28 color_silver m-0">
+                                Conduct interviews, concept tests, and surveys with specific users based <br>on certain
+                                characteristics and actions. Giving you faster, more relevant <br> results every time.
+                            </div>
+                            <div class="learn_more">Learn More
+                                <img src="images/arr_right.svg" alt="Learn More" class="learn_more_img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion_item">
+                        <div class="accordion_head d-flex justify-content-between">
+                            <h4 class="accordion_title color_black">AI Analysis</h4>
+                            <i class="fas fa-chevron-up d-flex align-items-center"></i>
+                        </div>
+                    </div>
+
+                    <div class="accordion_item">
+                        <div class="accordion_head d-flex justify-content-between">
+                            <h4 class="accordion_title color_black">Templates</h4>
+                            <i class="fas fa-chevron-up d-flex align-items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integrations d-flex justify-content-between">
+            <div class="integrations_content">
+                <h2 class="integrations_title txt_fs14_lh24_clr">INTEGRATIONS</h2>
+                <div class="integrations_content__txt txt_fs34_lh40 color_black">
+                    Share data and insights across all of your <br>(other) favorite tools by integrating with <br> Sprig
+                </div>
+                <div class="integrations_content__sub__txt txt_fs17_lh28 color_silver">
+                    Connect events and attributes from other platforms to ensure you’re asking the right<br>
+                    customers the right questions. Then share your findings with apps like Slack and<br>
+                    Zendesk to get a comprehensive view of your users' behaviors.
+                </div>
+                <button class="btn_custom orange_btn">See All Integrations</button>
+            </div>
+            <div><img src="images/integrations.png" alt="Platforms"></div>
+        </section>
+
+        <section class="case_study d-flex justify-content-between  m_side_32">
+            <div class="case_study__left">
+                <h2 class="cs__left__title txt_fs14_lh24_clr">CASE STUDY</h2>
+                <div class="cs__left__txt color_black">Trusted by the world's most <br>customer-centric teams</div>
+                <div class="cs__left__title__sub_txt txt_fs17_lh28 color_black">
+                    Sprig helps product and research teams <br>ensure user insights fuel every product <br>decision.
+                </div>
+                <button class="btn_custom" style="color: #000">Read More</button>
+            </div>
+            <div class="case_study__right position-relative">
+                <div class="bg_case_study__right position-absolute">
+                    <img src="images/case_study_bd.svg" alt="background">
+                </div>
+                <div class="case_study__right__txt txt_fs34_lh40">
+                    Sprig helps us collect insights <br> easier, faster, and more accurately
+                    <br> than any other tool on the market,<br> which allows us to build a better <br>
+                    product for our users and ultimately<br> grow our revenue.
+                </div>
+                <div class="case_study__right__person d-flex">
+                    <div><img src="images/daniel_layfield.svg" alt="Product Manager"></div>
+                    <div class="cs_right_person_info d-flex flex-column justify-content-center">
+                        <div class="color_black">Daniel Layfield</div>
+                        <div class="color_black">Growth Product Manager at Codecademy</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_top_wrap d-flex flex-column align-items-center">
+            <div class="footer_tittle txt_fs42_lh48 text-center" style="color: #fff">
+                Launch a Sprig within minutes. <br>See insights within hours.
+            </div>
+            <div class="footer_txt txt_fs17_lh28 text-center" style="color: #fff">
+                Create your free account to conduct video interviews, test designs, and survey <br>
+                specific users within your product, on your website, and more.
+            </div>
+            <button class="btn_custom orange_btn">Start for Free</button>
         </div>
 
-    </div>
+        <div class="footer_line m_side_32"></div>
+
+        <div class="footer_bot_wrap d-flex" style="margin-top: 79px">
+            <div><img src="images/logo_footer.svg" alt="logo" class="footer_logo"></div>
+            <div>
+                <nav class="d-flex footer_nav">
+                    <div class="footer_nav_part d-flex flex-column">
+                        <h4>Product</h4>
+                        <div><a href="#">Microsurveys</a></div>
+                        <div><a href="#">Video Questions</a></div>
+                        <div><a href="#">Concept Testing</a></div>
+                        <div><a href="#">Contextual Targeting</a></div>
+                        <div><a href="#">Text Analysis</a></div>
+                        <div><a href="#">Integrations</a></div>
+                        <div><a href="#">Plans</a></div>
+                    </div>
+                    <div class="footer_nav_part d-flex flex-column">
+                        <h4>Customer Stories</h4>
+                        <div><a href="#">Square</a></div>
+                        <div><a href="#">Codecademy</a></div>
+                        <div><a href="#">Nova Credit</a></div>
+                        <div><a href="#">Chipper</a></div>
+                        <div><a href="#">Plann</a></div>
+                        <div><a href="#">ProGuides</a></div>
+                        <div><a href="#">Shift</a></div>
+                    </div>
+                    <div class="footer_nav_part d-flex flex-column">
+                        <h4>Company</h4>
+                        <div><a href="#">About Us</a></div>
+                        <div><a href="#">Careers</a></div>
+                        <div><a href="#">Terms of Service</a></div>
+                        <div><a href="#">Privacy Policy</a></div>
+                        <div><a href="#">Data Processing <br>Addendum</a></div>
+                    </div>
+                    <div class="footer_nav_part d-flex flex-column">
+                        <h4>Resources</h4>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Template Gallery</a></div>
+                        <div><a href="#">Podcast</a></div>
+                        <div><a href="#">Documentation</a></div>
+                        <div><a href="#">Security</a></div>
+                    </div>
+                </nav>
+                <nav class="footer_nav_media d-flex justify-content-between">
+                    <div class="footer_nav_media_txt t">Copyright © 2022 Sprig. All Rights Reserved.</div>
+                    <div class="d-flex media_icons">
+                        <div><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></div>
+                        <div><a href="#"><img src="images/linkedin.svg" alt="Linkedin"></a></div>
+                        <div><a href="#"><img src="images/twitter.svg" alt="Twitter"></a></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 </html>
